@@ -1,0 +1,8 @@
+// Override Bootstrap
+@import 'abstracts/variables';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    min-height: 75rem;
+    padding-top: 7rem;
+}

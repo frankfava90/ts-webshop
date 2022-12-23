@@ -1,0 +1,126 @@
+// Load Bootstrap variables (but not the framework) so we can use them to override
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+
+:root {
+	font-size: 12px;
+}
+
+// Override Bootstrap default variables here
+$enable-negative-margins: true;
+
+// ----- GRAYS
+$gray-100: #f7f7f7;
+$gray-200: #efeff2;
+
+// ----- COLORS
+$blue: #2867b2;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$orange: #fd7e14 !default;
+$yellow: #f6c23e !default;
+$teal: #20c9a6 !default;
+$cyan: #36b9cc !default;
+
+// ----- Other COLORS
+$primary: #f7901f;
+$secondary: #333;
+
+$red: #FF5757;
+$light_red: #ff8f92;
+
+$green: #61CA85;
+$light_green: #E4FFD9;
+$dark_green: #368852;
+
+// ----- COLORS
+$light: $gray-100;
+$gray: $gray-600;
+$dark: $gray-800;
+
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	// BS
+	"danger": $red,
+	"success": $green,
+	"warning": $yellow-400,
+	"info": $cyan-400,
+	//
+	"white": $white,
+	"light": $light,
+	"gray": $gray,
+	"dark": $dark,
+	"black": $black,
+	//
+	"green": $green,
+	"red": $red,
+	"blue": $blue,
+	"orange": $orange,
+	"yellow": $yellow,
+	//
+	"dark-green": $dark_green,
+	"light-green": $light_green,
+	"light-red": $light_red,
+);
+
+// Spacing
+$spacer: 0.5rem;
+$spacers: (
+	0: 0,
+	"0a": ($spacer * 0.5),
+	1: ($spacer * 1),
+	"1a": ($spacer * 1.5),
+	2: ($spacer * 2),
+	"2a": ($spacer * 2.5),
+	3: ($spacer * 3),
+	"3a": ($spacer * 3.5),
+	4: ($spacer * 4),
+	"4a": ($spacer * 4.5),
+	5: ($spacer * 5),
+	6: ($spacer * 6),
+	8: ($spacer * 8),
+	10: ($spacer * 10),
+	12: ($spacer * 12),
+	14: ($spacer * 14),
+);
+
+// Adjust column spacing for symmetry
+$grid-columns: 12;
+$grid-gutter-width: $spacer * 3 !default;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 768px,
+	md: 992px,
+	lg: 1280px,
+	xl: 1600px,
+);
+
+$container-max-widths: (
+	sm: 720px,
+	md: 960px,
+	lg: 1240px,
+	xl: 1560px,
+);
+
+// ----- Other
+
+// Set Contrast Threshold
+$min-contrast-ratio: 2.0; 
+
+// Body
+$body-bg: #fcfcfc;
+$body-color: $gray-900;
+
+// Typography
+$font-family-base: "Open Sans", $font-family-sans-serif;
+$font-weight-bold: 700;
+$headings-font-family: "Nexa", $font-family-sans-serif;
+$headings-font-weight: 700;
+
+$btn-white-space: nowrap;
+
+$link-color: $primary;
+$link-hover-color: $secondary;
